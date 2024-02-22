@@ -9,6 +9,7 @@ import seta from './images/Framerightset.png'
 function App() {
 const [data, setData] = useState([]);
 const carrousel = useRef(null);
+const carrouseu = useRef(null);
 
   useEffect(() =>{
 fetch('http://localhost:3000/static/shoes.json').then((response)=> response.json()).then(setData)
@@ -27,6 +28,20 @@ carrousel.current.scrollLeft -= carrousel.current.offsetWidth;
 
 carrousel.current.scrollLeft += carrousel.current.offsetWidth;
   }
+
+
+  const handleLeftClic = (e) => {
+    e.preventDefault();
+    
+    carrouseu.current.scrollLeft -= carrouseu.current.offsetWidth;
+      }
+    
+      
+      const handleRightClic = (e) => {
+      e.preventDefault();
+    
+    carrouseu.current.scrollLeft += carrouseu.current.offsetWidth;
+      }
 
   if (!data || !data.length) return null;
   return (
@@ -84,6 +99,31 @@ carrousel.current.scrollLeft += carrousel.current.offsetWidth;
       );
       })}
      </div>
+     <br/>
+     <div className='buttons'>
+      <button onClick={handleLeftClic}><img src={seta}/></button>
+      <button onClick={handleRightClic}><img src={seta} /></button>
+
+     </div>
+     <div className='carrousel' ref={carrouseu}>  
+
+{data.map((item) =>{
+  const {id, name, subname, image} = item;
+return( 
+
+<div className='item' key={id}>
+<div className='image'>
+<img src={image} alt='gameimg' />
+</div>
+<div className='info'>
+<span className='name'>{name}</span>
+<span className='subname'>{subname}</span>
+</div>
+<button className='btn'>Get</button>
+</div> 
+);
+})}
+</div>
     </div>
  
       </header>
