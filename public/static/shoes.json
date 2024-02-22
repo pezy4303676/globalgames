@@ -1,0 +1,52 @@
+[
+  {
+    "id": "94313731",
+    "name": "Grand Theft Auto V" ,
+    "subname": "Acção e Mundo livre",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg?t=1706131787"
+  },
+  {
+    "id": "94313762",
+    "name": "Cyberpunk 2077",
+    "subname": "Acção e Mundo livre",
+    "image": "https://techunwrapped.com/wp-content/uploads/2022/01/1643634721_Cyberpunk-2077-release-date-price-platforms-and-lifespan.jpg"
+  },
+  
+  { 
+    "id": "943137XQ",
+    "name": "Tênis Nike Revolution 5",
+    "subname": "pezy",
+    "image": "file:///C:/Users/nunes/project-globalgames/public/static/images/capsule_616x353%201.jpg"
+  },
+  {
+    "id": "95077714",
+    "name": "Tênis Asics Patriot 12 Noosa",
+    "subname": "pezy",
+    "image": "file:///C:/Users/nunes/project-globalgames/public/static/images/capsule_616x353%201.jpg"
+  },
+  {
+    "id": "9507779N",
+    "name": "Tênis Asics Patriot 12 Noosa",
+    "subname": "pezy",
+    "image": "file:///C:/Users/nunes/project-globalgames/public/static/images/capsule_616x353%201.jpg"
+  },
+  {
+    "id": "92601102",
+    "name": "Tênis Oakley Modoc Low 3.0",
+    "subname": "pezy",
+    "image": "file:///C:/Users/nunes/project-globalgames/public/static/images/capsule_616x353%201.jpg"
+  },
+  {
+    "id": "9465450R",
+    "name": "Tênis Nike Renew Run",
+    "subname":"pezy",
+    "image": "file:///C:/Users/nunes/project-globalgames/public/static/images/capsule_616x353%201.jpg"
+  },
+  {
+    "id": "95004531",
+    "name": "Tênis Nike Quest 3",
+    "subname": "pezy",
+    "image": "file:///C:/Users/nunes/project-globalgames/public/static/images/capsule_616x353%201.jpg"
+  }
+  
+]

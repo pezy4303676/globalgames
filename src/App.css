@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
   }
+
+#games {
+  font-family: 'Krona One', sans-serif;
+  font-size: 13.4px;
+  color:#5F32C9;
+}
+#p{
+  margin-top: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Sidebar{
+position: absolute;
+bottom: 290px;
+left: 25px;
+ }
+.SidebarList {
+  width: 100%;
+padding: 0;
+height: auto;
+
+}
+
+.SidebarList .row{
+  width: 218px;
+  height: 37px;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.54px;
+  gap: 10px;
+}
+
+
+.row #icon{
+  margin-left: 50px;
+}
+.row:hover{
+ background-color: #141623;
+}
+
+.Sidebar #active {
+  background-color: #683CCF;
+}
+
+#page{
+  overflow-y: scroll;
+}
+#bganu {
+
+  height: 415px;
+  width: 1013px;
+  border-radius: 20px;
+  background-image: linear-gradient(to top,
+  #844C9A 30%,
+  #683CCF
+  );
+}
+#u{
+  font-family: 'Inter', sans-serif;
+}
+#btn {
+  border-radius: 30px;
+  font-size: 13.4px;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  left: 8px;
+}
+
+.carrousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carrousel::-webkit-scrollbar{
+  display: none;
+}
+.carrousel .item{
+  background-color: #121423;
+  margin: 8px;
+  width: 284px;
+  padding: 10px;
+  border-radius: 20px;
+  flex: none;
+}
+.carrousel .item .info{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.carrousel .item .info .name{
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-size: 14.49px;
+}
+.carrousel .item .info .subname{
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-size: 10.05px;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
+.carrousel .item  .image img{
+  width: 284.29px;
+  height:162.92px;
+  border-radius: 15px;
+}
+.buttons button{
+background-color: #5F32C9;
+padding-left: 22px;
+padding-right: 22px;
+height: 32px;
+border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+.buttons button:first-child img{
+  transform: rotate(180deg);
 }
