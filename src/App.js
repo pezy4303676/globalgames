@@ -75,6 +75,7 @@ carrousel.current.scrollLeft += carrousel.current.offsetWidth;
 <div className='image'>
 <img src={image} alt='gameimg' />
 </div>
+
 <div className='info'>
   <span className='name'>{name}</span>
   <span className='subname'>{subname}</span>
